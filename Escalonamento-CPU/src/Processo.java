@@ -5,14 +5,40 @@ public class Processo {
     int priority;
     int timeInterruption;
     int timeThatInterrupts;
+    boolean interrompido;
+    int tempoTota;
+    int lastRun;
 
-
-    public Processo(String nameProcess, int timeExecution, int priority, int timeEnterruption, int timeThatInterrupts) {
+    public Processo(String nameProcess, int timeExecution, int priority, int timeInterruption, int timeThatInterrupts,
+            boolean interrompido, int tempoTota, int lastRun) {
         this.nameProcess = nameProcess;
         this.timeExecution = timeExecution;
         this.priority = priority;
-        this.timeInterruption = timeEnterruption;
+        this.timeInterruption = timeInterruption;
         this.timeThatInterrupts = timeThatInterrupts;
+        this.interrompido = interrompido;
+        this.tempoTota = tempoTota;
+        this.lastRun = lastRun;
+    }
+
+
+    public int getLastRun() {
+        return lastRun;
+    }
+
+
+    public void setLastRun(int lastRun) {
+        this.lastRun = lastRun;
+    }
+
+
+    public int getTempoTota() {
+        return tempoTota;
+    }
+
+
+    public void setTempoTota(int tempoTota) {
+        this.tempoTota = tempoTota;
     }
 
 
@@ -56,6 +82,15 @@ public class Processo {
 
     public void setTimeThatInterrupts(int timeThatInterrupts) {
         this.timeThatInterrupts = timeThatInterrupts;
+    }
+
+    public boolean getisInterrompido() {
+        return interrompido;
+    }
+
+
+    public void setInterrompido(boolean interrompido) {
+        this.interrompido = interrompido;
     }
 
 }
