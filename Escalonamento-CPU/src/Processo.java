@@ -1,4 +1,4 @@
-public class Processo {
+public class Processo implements Cloneable{
 
     String nameProcess;
     int timeExecution;
@@ -20,6 +20,9 @@ public class Processo {
         this.tempoTota = tempoTota;
         this.lastRun = lastRun;
     }
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+     }
 
 
     public int getLastRun() {
