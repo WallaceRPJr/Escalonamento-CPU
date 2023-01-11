@@ -23,40 +23,42 @@ public class Escalonamento {
 
         ArrayList<Processo> listProcess = new ArrayList<>();
 
-        /*
-         * System.out.println("= Digite a quantidade de processos =");
-         * qtdeProcess = in.nextInt();
-         * 
-         * for (int i = 1; i <= qtdeProcess; i++) {
-         * 
-         * nameProcess = "P" + i;
-         * 
-         * System.out.println("= Digite o tempo do processo " + nameProcess + " =");
-         * timeExecution = in.nextInt();
-         * 
-         * System.out.println("= Digite a sua prioridade " + nameProcess + " =");
-         * priority = in.nextInt();
-         * 
-         * System.out.println("= Digite o tempo de interrupção " + nameProcess + " =");
-         * System.out.println("Se caso nao tenha digite 0");
-         * timeEnterruption = in.nextInt();
-         * 
-         * System.out.println("= Digite o momento da interrupção " + nameProcess +
-         * " =");
-         * timeThatInterrupts = in.nextInt();
-         * 
-         * listProcess.add(new Processo(nameProcess, timeExecution, priority,
-         * timeEnterruption, timeThatInterrupts,
-         * false, 100, 0));
-         * }
-         * System.out.println("---------------------------------" + "\n" + "");
-         */
+        
+         System.out.println("= Digite a quantidade de processos =");
+         qtdeProcess = in.nextInt();
+          
+          for (int i = 1; i <= qtdeProcess; i++) {
+          
+          nameProcess = "P" + i;
+          
+          System.out.println("= Digite o tempo do processo " + nameProcess + " =");
+          timeExecution = in.nextInt();
+          
+          System.out.println("= Digite a sua prioridade " + nameProcess + " =");
+          priority = in.nextInt();
+          
+          System.out.println("= Digite o tempo de interrupção " + nameProcess + " =");
+          System.out.println("Se caso nao tenha digite 0");
+          timeEnterruption = in.nextInt();
+          
+          System.out.println("= Digite o momento da interrupção " + nameProcess +
+          " =");
+          timeThatInterrupts = in.nextInt();
+          
 
-        listProcess.add(new Processo("P1", 10, 0, 6, 4,
+         listProcess.add(new Processo(nameProcess, timeExecution, priority,
+         timeEnterruption, timeThatInterrupts,
+        false, 100, 0));
+        }
+        System.out.println("---------------------------------" + "\n" + "");
+        
+
+       /*  listProcess.add(new Processo("P1", 10, 0, 6, 4,
                 false, 0, 0));
 
+                
         listProcess.add(new Processo("P2", 3, 2, 2, 2,
-                false, 0, 0));
+                false, 0, 0)); */
 
         ArrayList<Processo> listProcessAux = new ArrayList<>();
 
